@@ -1,0 +1,38 @@
+aid: tinyproxy
+name: Tinyproxy
+description: >-
+  Tinyproxy is a lightweight HTTP/HTTPS proxy daemon designed for POSIX operating systems, ideal for small networks and embedded systems.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Proxy
+  - Forward Proxy
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/tinyproxy/refs/heads/main/apis.yml
+created: '2026-03-27'
+modified: '2026-03-27'
+specificationVersion: '0.19'
+apis:
+  - aid: tinyproxy:tinyproxy
+    name: Tinyproxy
+    description: >-
+      Tinyproxy is a lightweight HTTP/HTTPS proxy daemon designed for POSIX operating systems, ideal for small networks and embedded systems.
+    humanURL: https://tinyproxy.github.io/
+    tags:
+      - Proxy
+      - Forward Proxy
+    properties:
+      - type: Documentation
+        url: https://tinyproxy.github.io/
+      - type: Getting Started
+        url: https://github.com/tinyproxy/tinyproxy#readme
+common:
+  - type: Website
+    url: https://tinyproxy.github.io/
+  - type: Documentation
+    url: https://tinyproxy.github.io/
+  - type: GitHub Organization
+    url: https://github.com/tinyproxy
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
