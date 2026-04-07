@@ -5,8 +5,8 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Proxy
   - Forward Proxy
+  - Proxy
 url: >-
   https://raw.githubusercontent.com/api-evangelist/tinyproxy/refs/heads/main/apis.yml
 created: '2026-03-27'
@@ -19,8 +19,8 @@ apis:
       Tinyproxy is a lightweight HTTP/HTTPS proxy daemon designed for POSIX operating systems, ideal for small networks and embedded systems.
     humanURL: https://tinyproxy.github.io/
     tags:
-      - Proxy
       - Forward Proxy
+      - Proxy
     properties:
       - type: Documentation
         url: https://tinyproxy.github.io/
