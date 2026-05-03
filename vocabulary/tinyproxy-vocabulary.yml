@@ -1,0 +1,144 @@
+vocabulary:
+  name: Tinyproxy Vocabulary
+  description: >-
+    Vocabulary and taxonomy for Tinyproxy HTTP/HTTPS proxy daemon covering
+    proxy concepts, configuration, networking, filtering, and access control terms.
+  version: '1.0'
+  created: '2026-05-03'
+  modified: '2026-05-03'
+
+terms:
+  - term: Forward Proxy
+    definition: >-
+      A proxy server that sits between client devices and the internet,
+      forwarding client requests to external servers. Tinyproxy operates
+      as a forward proxy server.
+    tags:
+      - Core Concept
+      - Network
+
+  - term: CONNECT Tunneling
+    definition: >-
+      An HTTP method used to establish a TCP tunnel through the proxy for
+      HTTPS and other protocols, enabling encrypted traffic to pass through
+      the proxy without decryption.
+    tags:
+      - HTTP
+      - HTTPS
+      - Tunneling
+
+  - term: Access Control List (ACL)
+    definition: >-
+      A list of IP addresses or CIDR ranges that are permitted or denied
+      access to the Tinyproxy service, configured via Allow and Deny directives.
+    aliases:
+      - ACL
+    tags:
+      - Security
+      - Access Control
+
+  - term: Upstream Proxy
+    definition: >-
+      A proxy server that Tinyproxy connects through to reach the internet,
+      enabling proxy chaining. Supports HTTP, SOCKS4, and SOCKS5 protocols.
+    tags:
+      - Network
+      - Proxy Chain
+
+  - term: Reverse Proxy
+    definition: >-
+      A mode in which Tinyproxy forwards incoming requests to backend servers,
+      routing based on URL patterns rather than forwarding arbitrary client requests.
+    tags:
+      - Network
+      - Architecture
+
+  - term: Filter File
+    definition: >-
+      A text file containing regular expressions or domain patterns used to
+      block specific URLs or domains from being proxied through Tinyproxy.
+    tags:
+      - Security
+      - Content Filtering
+
+  - term: Statistics Page
+    definition: >-
+      Tinyproxy's internal HTML monitoring page accessible by requesting a
+      configured stat hostname, showing connection counts and proxy statistics.
+    tags:
+      - Monitoring
+      - Administration
+
+  - term: Via Header
+    definition: >-
+      An HTTP header added by Tinyproxy to indicate proxy hop information.
+      Can be disabled for privacy using the DisableViaHeader directive.
+    tags:
+      - HTTP
+      - Privacy
+
+  - term: X-Tinyproxy Header
+    definition: >-
+      An optional HTTP header that Tinyproxy adds to forwarded requests
+      containing the client's original IP address.
+    tags:
+      - HTTP
+      - Privacy
+
+  - term: Transparent Proxy
+    definition: >-
+      A proxy configuration where client traffic is intercepted and forwarded
+      without requiring explicit client-side proxy configuration.
+    tags:
+      - Network
+      - Configuration
+
+  - term: Max Clients
+    definition: >-
+      The maximum number of simultaneous client connections Tinyproxy will
+      accept, controlling resource usage under high load.
+    tags:
+      - Configuration
+      - Performance
+
+  - term: Timeout
+    definition: >-
+      The number of seconds Tinyproxy waits for activity on a connection
+      before closing it, preventing resource exhaustion from idle connections.
+    tags:
+      - Configuration
+      - Performance
+
+  - term: CIDR
+    definition: >-
+      Classless Inter-Domain Routing notation for specifying IP address ranges
+      in Tinyproxy access control rules (e.g., 192.168.1.0/24).
+    aliases:
+      - Classless Inter-Domain Routing
+    tags:
+      - Networking
+      - Access Control
+
+  - term: Default Deny
+    definition: >-
+      A filtering policy where all URLs are blocked unless explicitly allowed
+      by filter rules. Enabled with the FilterDefaultDeny directive.
+    tags:
+      - Security
+      - Filtering
+
+  - term: Bind Address
+    definition: >-
+      The network interface address Tinyproxy binds to for listening.
+      Can be restricted to a specific interface for security isolation.
+    tags:
+      - Network
+      - Configuration
+
+  - term: Process Group
+    definition: >-
+      The system group identity under which the Tinyproxy daemon process runs,
+      used for permission isolation on the host system.
+    tags:
+      - Security
+      - System Administration

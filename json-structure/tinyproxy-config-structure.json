@@ -1,0 +1,67 @@
+{
+  "title": "Tinyproxy Configuration Structure",
+  "description": "Structural documentation for Tinyproxy HTTP proxy daemon configuration",
+  "type": "object",
+  "fields": [
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "TCP listening port (default: 8888)"
+    },
+    {
+      "name": "user",
+      "type": "string",
+      "description": "System user for daemon process"
+    },
+    {
+      "name": "maxClients",
+      "type": "integer",
+      "description": "Maximum simultaneous proxy connections"
+    },
+    {
+      "name": "allow",
+      "type": "array[string]",
+      "description": "Allowed client IP addresses or CIDR ranges"
+    },
+    {
+      "name": "deny",
+      "type": "array[string]",
+      "description": "Denied client IP addresses or CIDR ranges"
+    },
+    {
+      "name": "upstream",
+      "type": "array[Upstream]",
+      "description": "Upstream proxy chain configuration"
+    },
+    {
+      "name": "filter",
+      "type": "string",
+      "description": "Path to URL/domain filter file"
+    },
+    {
+      "name": "connectPort",
+      "type": "array[integer]",
+      "description": "Allowed ports for HTTPS CONNECT tunneling"
+    },
+    {
+      "name": "logLevel",
+      "type": "string (enum)",
+      "description": "Logging level: Critical, Error, Warning, Notice, Connect, Info"
+    },
+    {
+      "name": "timeout",
+      "type": "integer",
+      "description": "Connection timeout in seconds"
+    },
+    {
+      "name": "statHost",
+      "type": "string",
+      "description": "Hostname for internal statistics page"
+    },
+    {
+      "name": "reverseOnly",
+      "type": "boolean",
+      "description": "Restrict to reverse proxy mode only"
+    }
+  ]
+}

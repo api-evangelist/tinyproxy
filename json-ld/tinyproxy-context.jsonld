@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "tinyproxy": "https://tinyproxy.github.io/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "ProxyConfiguration": "tinyproxy:ProxyConfiguration",
+    "AccessControlRule": "tinyproxy:AccessControlRule",
+    "UpstreamProxy": "tinyproxy:UpstreamProxy",
+    "FilterRule": "tinyproxy:FilterRule",
+    "SoftwareApplication": "schema:SoftwareApplication",
+
+    "port": {
+      "@id": "schema:serverPort",
+      "@type": "xsd:integer"
+    },
+    "user": "schema:accountId",
+    "group": "tinyproxy:processGroup",
+    "logFile": "tinyproxy:logFilePath",
+    "logLevel": "tinyproxy:logLevel",
+    "pidFile": "tinyproxy:pidFilePath",
+    "maxClients": "tinyproxy:maxConnections",
+    "timeout": {
+      "@id": "tinyproxy:connectionTimeout",
+      "@type": "xsd:integer"
+    },
+
+    "allow": "tinyproxy:allowRule",
+    "deny": "tinyproxy:denyRule",
+    "upstream": "tinyproxy:upstreamProxy",
+    "noUpstream": "tinyproxy:bypassUpstream",
+    "filter": "tinyproxy:filterFile",
+    "filterURLs": "tinyproxy:filterByUrl",
+    "connectPort": "tinyproxy:allowedConnectPort",
+    "statHost": "tinyproxy:statisticsHost",
+
+    "reverseOnly": "tinyproxy:reverseProxyMode",
+    "reverseBaseURL": "tinyproxy:reverseBaseUrl",
+
+    "disableViaHeader": "tinyproxy:disableVia",
+    "xTinyproxyHeader": "tinyproxy:addClientIpHeader"
+  }
+}

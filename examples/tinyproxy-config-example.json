@@ -1,0 +1,30 @@
+{
+  "example": "Tinyproxy Configuration",
+  "description": "Example Tinyproxy daemon configuration for a small network deployment",
+  "configuration": {
+    "port": 8888,
+    "user": "tinyproxy",
+    "group": "tinyproxy",
+    "logFile": "/var/log/tinyproxy/tinyproxy.log",
+    "logLevel": "Info",
+    "pidFile": "/run/tinyproxy/tinyproxy.pid",
+    "maxClients": 100,
+    "minSpareServers": 5,
+    "maxSpareServers": 20,
+    "startServers": 10,
+    "maxRequestsPerChild": 0,
+    "allow": [
+      "127.0.0.1",
+      "192.168.1.0/24"
+    ],
+    "deny": [],
+    "disableViaHeader": false,
+    "connectPort": [443, 563],
+    "statHost": "tinyproxy.stats",
+    "timeout": 600,
+    "filter": "/etc/tinyproxy/filter",
+    "filterURLs": false,
+    "filterCaseSensitive": false,
+    "filterDefaultDeny": false
+  }
+}
