@@ -37,9 +37,9 @@ apis:
     properties:
       - type: Documentation
         url: https://tinyproxy.github.io/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://github.com/tinyproxy/tinyproxy#readme
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/tinyproxy/tinyproxy
       - type: JSONSchema
         url: >-
@@ -82,9 +82,9 @@ common:
     url: https://tinyproxy.github.io/
   - type: Documentation
     url: https://tinyproxy.github.io/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/tinyproxy
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/tinyproxy/tinyproxy
   - type: JSONSchema
     url: >-
