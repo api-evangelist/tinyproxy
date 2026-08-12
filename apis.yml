@@ -90,6 +90,9 @@ solutions:
   - Embedded proxy deployments
   - Development proxy environments
 common:
+  - type: License
+    name: GPL-2.0
+    url: https://github.com/tinyproxy/tinyproxy/blob/master/LICENSE
   - type: Website
     url: https://tinyproxy.github.io/
   - type: Documentation
