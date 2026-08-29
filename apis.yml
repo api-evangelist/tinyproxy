@@ -7,6 +7,18 @@ description: >-
   with minimal system resource usage. Configuration is file-based with an internal
   statistics monitoring page.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: GPL-2.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -96,6 +108,12 @@ solutions:
   - Embedded proxy deployments
   - Development proxy environments
 common:
+  - type: IssueTracker
+    url: https://github.com/tinyproxy/tinyproxy/issues
+  - type: Releases
+    url: https://github.com/tinyproxy/tinyproxy/releases
+  - type: SecurityPolicy
+    url: https://github.com/tinyproxy/tinyproxy/blob/master/SECURITY.md
   - type: License
     name: GPL-2.0
     url: https://github.com/tinyproxy/tinyproxy/blob/master/LICENSE
