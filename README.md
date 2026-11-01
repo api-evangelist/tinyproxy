@@ -66,59 +66,131 @@
 
 Tinyproxy is a lightweight, open-source HTTP/HTTPS proxy daemon designed for POSIX operating systems. It is ideal for use cases in embedded deployments, small networks, and environments where a full-featured HTTP proxy is required with minimal system resource usage. Configuration is file-based with an internal statistics monitoring page.
 
-## APIs
+**Areas:** Forward Proxy · Proxy · HTTP · Networking · Open Source
 
-### Tinyproxy
+## Tinyproxy on APIs.io
 
-Tinyproxy is a lightweight HTTP/HTTPS proxy daemon for POSIX operating systems with minimal system resource requirements. Provides forward proxying, HTTPS CONNECT tunneling, domain filtering, access control, upstream proxy chaining, transparent proxying, and an internal statistics monitoring page.
+Everything profiled for Tinyproxy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tinyproxy/](https://apis.io/providers/tinyproxy/)** — or go straight to one of the APIs or properties below.
 
-- **Documentation:** [https://tinyproxy.github.io/](https://tinyproxy.github.io/)
-- **GitHub:** [https://github.com/tinyproxy/tinyproxy](https://github.com/tinyproxy/tinyproxy)
+### APIs (1)
 
-## Features
+- [Tinyproxy](https://apis.io/apis/tinyproxy/tinyproxy/) — Tinyproxy is a lightweight HTTP/HTTPS proxy daemon for POSIX operating systems with minimal system resource requirements. Provides forward proxying, HTTPS…
 
-- HTTP and HTTPS proxy support
-- CONNECT tunneling for HTTPS
-- Domain and URL filtering
-- Access control lists
-- Upstream proxy chaining
-- Transparent proxy mode
-- Internal statistics monitoring page
-- Privacy header filtering
-- Logging with configurable verbosity
-- Small memory footprint (~2MB with glibc)
+### Published properties
 
-## Use Cases
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Embedded systems proxy
-- Small network HTTP proxy
-- Content filtering gateway
-- Development and testing proxy
-- Container sidecar proxy
-- IoT device internet access control
+#### JSON Schema (1)
 
-## Artifacts
+The data models the API reads and writes.
 
-| Type | File |
+- [Tinyproxy Configuration](https://apis.io/schemas/tinyproxy/tinyproxy-config/)
+
+#### JSON Structure (1)
+
+Data models expressed in JSON Structure.
+
+- [Tinyproxy Config Structure](https://apis.io/json-structure/tinyproxy/tinyproxy-config-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Tinyproxy Context](https://apis.io/jsonld/tinyproxy/tinyproxy-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Tinyproxy Vocabulary](https://apis.io/vocabularies/tinyproxy/tinyproxy-vocabulary/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Tinyproxy Config Example](https://apis.io/examples/tinyproxy/tinyproxy-config-example/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Tinyproxy — jsonschema rules](https://apis.io/rules/tinyproxy/tinyproxy-jsonschema-spectral-rules/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Tinyproxy Plans Pricing](https://apis.io/plans/tinyproxy/tinyproxy-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Tinyproxy Rate Limits](https://apis.io/rate-limits/tinyproxy/tinyproxy-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Tinyproxy Finops](https://apis.io/finops/tinyproxy/tinyproxy-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://tinyproxy.github.io/)
+- [Documentation](https://tinyproxy.github.io/)
+- [GitHub](https://github.com/tinyproxy)
+
+## API Evangelist rating
+
+**Kin Score 26.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| JSON Schema | [tinyproxy-config-schema.json](json-schema/tinyproxy-config-schema.json) |
-| JSON Structure | [tinyproxy-config-structure.json](json-structure/tinyproxy-config-structure.json) |
-| JSON-LD Context | [tinyproxy-context.jsonld](json-ld/tinyproxy-context.jsonld) |
-| Vocabulary | [tinyproxy-vocabulary.yml](vocabulary/tinyproxy-vocabulary.yml) |
+| Discoverability | 57.1 |
+| Contract quality | 17.9 |
+| Contract governance | 23.5 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
 
-## Examples
+**Agent readiness 0.6** — human-only
 
-- [Configuration Example](examples/tinyproxy-config-example.json)
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-## Solutions
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
 
-- Network access control
-- Internet traffic filtering
-- Embedded proxy deployments
-- Development proxy environments
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tinyproxy/](https://apis.io/providers/tinyproxy/).
 
-## Links
+## How this profile is made
 
-- **Website:** [https://tinyproxy.github.io/](https://tinyproxy.github.io/)
-- **Documentation:** [https://tinyproxy.github.io/](https://tinyproxy.github.io/)
-- **GitHub Organization:** [https://github.com/tinyproxy](https://github.com/tinyproxy)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tinyproxy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tinyproxy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
